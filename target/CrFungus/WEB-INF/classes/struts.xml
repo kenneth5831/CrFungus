@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+<struts>
+  <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+  <constant name="struts.devMode" value="false" />
+  <!-- 資源檔的檔名 -->
+  <constant name="struts.custom.i18n.resources" value="caption" />
+  <!-- 資源檔的編碼 -->
+  <constant name="struts.i18n.econding" value="BIG5" />
+  
+  <package name="default" extends="struts-default">
+    <action name="index" class="idv.steven.demo.action.IndexAction">
+      <result name="realtimeInfo">/jsp/realtimeInfo.jsp</result>
+      <result name="manageStock">/jsp/manageStock.jsp</result>
+    </action>
+    
+    <!-- <action name="manage" class="idv.steven.demo.action.ManageAction">
+      <result name="success">/jsp/result.jsp</result>
+      <result name="error">/jsp/error.jsp</result>
+    </action>     -->
+  </package>
+</struts>

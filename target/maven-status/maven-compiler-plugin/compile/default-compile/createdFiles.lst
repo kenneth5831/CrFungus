@@ -1,0 +1,3 @@
+dao\IndexDao.class
+action\IndexAction.class
+action\BaseAction.class
