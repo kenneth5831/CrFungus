@@ -13,14 +13,14 @@
   <constant name="struts.i18n.econding" value="BIG5" />
   
   <package name="default" extends="struts-default">
-    <action name="index" class="idv.steven.demo.action.IndexAction">
-      <result name="realtimeInfo">/jsp/realtimeInfo.jsp</result>
-      <result name="manageStock">/jsp/manageStock.jsp</result>
+    <action name="Index" class="action.IndexAction">
+      <result name="success">index.jsp</result>
     </action>
     
-    <!-- <action name="manage" class="idv.steven.demo.action.ManageAction">
-      <result name="success">/jsp/result.jsp</result>
-      <result name="error">/jsp/error.jsp</result>
-    </action>     -->
+    <action name="Login" class="action.LoginAction">
+       <result name="success">welcome.jsp</result>
+	   <result name="error">login.jsp</result>
+    </action>
+    
   </package>
 </struts>
